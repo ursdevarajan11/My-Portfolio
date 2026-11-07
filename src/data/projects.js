@@ -1,0 +1,38 @@
+export const projects = [
+  {
+    title: 'Perfume Shop Website',
+    category: 'E-commerce',
+    image: '/images/perfume-shop.svg',
+    description: 'Full-stack e-commerce website for browsing perfume products.',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Python', 'Database'],
+    github: '',
+    demo: '',
+  },
+  {
+    title: 'AI Healthcare Chatbot',
+    category: 'Artificial intelligence',
+    image: '/images/healthcare-chatbot.svg',
+    description: 'AI-powered web application providing basic healthcare guidance.',
+    technologies: ['Python', 'AI/ML', 'NLP', 'Flask'],
+    github: '',
+    demo: '',
+  },
+  {
+    title: 'Todo App',
+    category: 'Productivity',
+    image: '/images/todo-app.svg',
+    description: 'Responsive productivity application for managing daily tasks.',
+    technologies: ['React', 'JavaScript', 'CSS', 'REST API'],
+    github: '',
+    demo: '',
+  },
+  {
+    title: 'Developer Portfolio',
+    category: 'Web development',
+    image: '/images/developer-portfolio.svg',
+    description: 'Responsive personal site showcasing skills, projects, GitHub activity, and contact details.',
+    technologies: ['React', 'Vite', 'CSS'],
+    github: '',
+    demo: '',
+  },
+]

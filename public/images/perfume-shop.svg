@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="25" y1="0" x2="700" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#17223C"/><stop offset="1" stop-color="#101A30"/>
+    </linearGradient>
+    <linearGradient id="bottle" x1="310" y1="110" x2="480" y2="355" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD8B8"/><stop offset="1" stop-color="#C86E43"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="matrix(0 212 -282 0 386 214)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF874A" stop-opacity=".22"/><stop offset="1" stop-color="#FF874A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h760v420H0z"/><path fill="url(#glow)" d="M0 0h760v420H0z"/>
+  <path stroke="#FF874A" stroke-opacity=".22" d="M86 350h590M116 80h528"/>
+  <circle cx="380" cy="210" r="148" stroke="#FF874A" stroke-opacity=".16"/>
+  <circle cx="380" cy="210" r="116" stroke="#EDF3FF" stroke-opacity=".08"/>
+  <path fill="url(#bottle)" d="M323 162h114v154a22 22 0 0 1-22 22h-70a22 22 0 0 1-22-22V162Z"/>
+  <path fill="#E8B28D" d="M348 126h64v36h-64z"/><path fill="#EDF3FF" fill-opacity=".72" d="M359 95h42v31h-42z"/>
+  <path fill="#263653" d="M337 218h86v72h-86z"/><path fill="#FF874A" d="M363 237h34v3h-34z"/>
+  <path fill="#EDF3FF" fill-opacity=".72" d="M350 249h60v3h-60z"/><path fill="#EDF3FF" fill-opacity=".4" d="M360 258h40v2h-40z"/>
+  <circle cx="211" cy="162" r="4" fill="#35E0D0"/><circle cx="558" cy="267" r="4" fill="#FF874A"/>
+  <text x="32" y="38" fill="#9AA9C3" font-family="sans-serif" font-size="12" letter-spacing="3">FRAGRANCE / E-COMMERCE</text>
+  <text x="608" y="390" fill="#9AA9C3" font-family="sans-serif" font-size="11" letter-spacing="2">01 — 05</text>
+</svg>

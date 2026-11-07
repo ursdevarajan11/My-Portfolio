@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="50" y1="0" x2="690" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#142742"/><stop offset="1" stop-color="#101A30"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="matrix(0 188 -280 0 383 205)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#35E0D0" stop-opacity=".16"/><stop offset="1" stop-color="#35E0D0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h760v420H0z"/><path fill="url(#glow)" d="M0 0h760v420H0z"/>
+  <rect x="151" y="78" width="458" height="264" rx="12" fill="#0B1428" stroke="#263653"/>
+  <path fill="#14213B" d="M163 78h434a12 12 0 0 1 12 12v30H151V90a12 12 0 0 1 12-12Z"/>
+  <circle cx="174" cy="100" r="4" fill="#FF874A"/><circle cx="188" cy="100" r="4" fill="#35E0D0"/><circle cx="202" cy="100" r="4" fill="#9AA9C3" fill-opacity=".65"/>
+  <path fill="#35E0D0" d="m295 180-46 34 46 34 8-11-31-23 31-23-8-11Zm170 0 46 34-46 34-8-11 31-23-31-23 8-11Z"/>
+  <path fill="#FF874A" d="m421 164-37 102h-15l37-102h15Z"/>
+  <path stroke="#263653" stroke-width="2" d="M184 290h392"/>
+  <rect x="214" y="307" width="125" height="5" rx="2.5" fill="#35E0D0" fill-opacity=".55"/>
+  <circle cx="640" cy="141" r="4" fill="#FF874A"/><circle cx="113" cy="266" r="4" fill="#35E0D0"/>
+  <text x="32" y="38" fill="#9AA9C3" font-family="sans-serif" font-size="12" letter-spacing="3">PERSONAL PORTFOLIO / REACT</text>
+  <text x="608" y="390" fill="#9AA9C3" font-family="sans-serif" font-size="11" letter-spacing="2">05 — 05</text>
+</svg>

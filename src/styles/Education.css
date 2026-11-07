@@ -1,0 +1,140 @@
+.education-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+  gap: 88px;
+}
+
+.education-heading {
+  max-width: 460px;
+}
+
+.education-heading > .body-copy {
+  margin-top: 17px;
+}
+
+.internship-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-top: 30px;
+  padding: 18px;
+  border: 1px solid rgb(164 94 64 / 26%);
+  border-radius: 7px;
+  background: linear-gradient(135deg, rgb(164 94 64 / 5%), rgb(255 255 255 / 90%));
+}
+
+.internship-icon {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 6px;
+  color: var(--orange);
+  background: rgb(164 94 64 / 9%);
+}
+
+.card-kicker {
+  margin: 1px 0 7px;
+  color: var(--orange);
+  font: 500 10px var(--body-font);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.internship-card h3 {
+  margin: 0;
+  color: var(--text);
+  font: 600 14px/1.45 var(--heading-font);
+}
+
+.internship-card p:last-child {
+  margin: 5px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.education-timeline {
+  position: relative;
+  display: grid;
+  gap: 16px;
+  padding-left: 27px;
+}
+
+.education-timeline::before {
+  position: absolute;
+  top: 22px;
+  bottom: 32px;
+  left: 9px;
+  width: 1px;
+  background: linear-gradient(var(--cyan), rgb(222 221 211 / 82%));
+  content: '';
+}
+
+.timeline-item {
+  position: relative;
+}
+
+.timeline-marker {
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  left: -27px;
+  display: grid;
+  width: 20px;
+  height: 20px;
+  place-items: center;
+  border: 1px solid rgb(40 91 76 / 48%);
+  border-radius: 50%;
+  color: var(--cyan);
+  background: var(--background);
+}
+
+.timeline-card {
+  padding: 18px 20px;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  background: var(--card);
+  transition: border-color 170ms ease, transform 170ms ease;
+}
+
+.timeline-card:hover {
+  transform: translateX(3px);
+  border-color: rgb(40 91 76 / 42%);
+}
+
+.timeline-year {
+  display: inline-block;
+  margin-bottom: 7px;
+  color: var(--cyan);
+  font: 500 10px var(--body-font);
+  letter-spacing: 0.08em;
+}
+
+.timeline-card h3 {
+  margin: 0;
+  color: var(--text);
+  font: 600 15px/1.45 var(--heading-font);
+}
+
+.timeline-card p {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.timeline-item.is-current .timeline-card {
+  border-color: rgb(40 91 76 / 32%);
+  background: linear-gradient(120deg, rgb(40 91 76 / 5%), var(--card) 65%);
+}
+
+@media (max-width: 900px) {
+  .education-layout {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .education-heading {
+    max-width: 640px;
+  }
+}
