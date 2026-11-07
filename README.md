@@ -49,3 +49,26 @@ Connect the repository to Netlify and use:
 - Publish directory: `dist`
 
 The included `netlify.toml` redirects unmatched routes to `index.html`.
+## 🌐 Live Portfolio
+
+🚀 **Explore the live portfolio:** [Devaraja Rajan — Developer Portfolio](https://devaraja-rajan-portfolio.netlify.app)
+
+💻 **GitHub Repository:** [View Source Code](https://github.com/ursdevarajan11/My-Portfolio.git)
+
+The portfolio showcases my technical skills, featured projects, professional background, and contact information.
+
+### Tech Stack
+- React.js
+- Vite
+- JavaScript
+- CSS
+- Netlify
+
+### Features
+- Responsive design
+- Interactive project showcase
+- Resume download
+- Contact form
+- Modern editorial theme
+
+
