@@ -23,8 +23,8 @@ export const projects = [
     image: '/images/todo-app.svg',
     description: 'Responsive productivity application for managing daily tasks.',
     technologies: ['React', 'JavaScript', 'CSS', 'REST API'],
-    github: '',
-    demo: '',
+    github: 'https://github.com/ursdevarajan11/Todo-App.git',
+    demo: 'https://deva-todo-app.netlify.app/',
   },
   {
     title: 'Developer Portfolio',

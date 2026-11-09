@@ -20,6 +20,7 @@ function Contact() {
     const nextErrors = {}
     const name = String(formData.get('name') || '').trim()
     const email = String(formData.get('email') || '').trim()
+    const subject = String(formData.get('subject') || '').trim()
     const message = String(formData.get('message') || '').trim()
 
     if (!name) nextErrors.name = 'Please enter your name.'
@@ -28,6 +29,7 @@ function Contact() {
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       nextErrors.email = 'Please enter a valid email address.'
     }
+    if (!subject) nextErrors.subject = 'Please enter a subject.'
     if (!message) nextErrors.message = 'Please enter a message.'
     return nextErrors
   }
@@ -43,15 +45,15 @@ function Contact() {
     if (Object.keys(nextErrors).length > 0) return
 
     if (!formspreeEndpoint) {
-      const subject = encodeURIComponent(`Portfolio message from ${formData.get('name')}`)
+      const emailSubject = encodeURIComponent(formData.get('subject'))
       const body = encodeURIComponent(
-        `Name: ${formData.get('name')}\nEmail: ${formData.get('email')}\n\n${formData.get('message')}`,
+        `Name: ${formData.get('name')}\nEmail: ${formData.get('email')}\nSubject: ${formData.get('subject')}\n\n${formData.get('message')}`,
       )
       const recipient = profile.email ? `${profile.email}` : ''
       setStatus({
         type: 'notice',
         message: 'Formspree is not configured. Open an email draft to send this message.',
-        href: `mailto:${recipient}?subject=${subject}&body=${body}`,
+        href: `mailto:${recipient}?subject=${emailSubject}&body=${body}`,
       })
       return
     }
@@ -86,7 +88,7 @@ function Contact() {
       <div className="container">
         <div className="section-heading contact-heading">
           <p className="eyebrow">06 — Contact</p>
-          <h2>Let&apos;s start a conversation.</h2>
+          <h2>Let&apos;s build something great together.</h2>
           <p className="body-copy">
             Have an opportunity, a question, or an interesting idea? I&apos;d like to hear from you.
           </p>
@@ -161,6 +163,19 @@ function Contact() {
                 onChange={() => setErrors((current) => ({ ...current, email: '' }))}
               />
               {errors.email && <span className="field-error" id="contact-email-error">{errors.email}</span>}
+            </div>
+            <div className="form-field">
+              <label htmlFor="contact-subject">Subject</label>
+              <input
+                id="contact-subject"
+                name="subject"
+                type="text"
+                required
+                aria-invalid={Boolean(errors.subject)}
+                aria-describedby={errors.subject ? 'contact-subject-error' : undefined}
+                onChange={() => setErrors((current) => ({ ...current, subject: '' }))}
+              />
+              {errors.subject && <span className="field-error" id="contact-subject-error">{errors.subject}</span>}
             </div>
             <div className="form-field">
               <label htmlFor="contact-message">Message</label>

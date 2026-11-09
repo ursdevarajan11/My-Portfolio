@@ -6,9 +6,10 @@ import '../styles/Navbar.css'
 const links = [
   { href: '#home', label: 'Home' },
   { href: '#about', label: 'About Me' },
+  { href: '#education', label: 'Education' },
   { href: '#skills', label: 'Skills' },
   { href: '#projects', label: 'Projects' },
-  { href: '#contact', label: 'Contact' },
+  { href: '#github', label: 'GitHub' },
 ]
 
 function Navbar() {
@@ -75,13 +76,10 @@ function Navbar() {
             ))}
             <a
               className="nav-resume"
-              href={profile.resumeUrl}
-              target="_blank"
-              rel="noreferrer"
-              aria-label="View resume PDF in a new tab"
+              href="#contact"
               onClick={closeMenu}
             >
-              Resume
+              Let&apos;s Talk
             </a>
           </div>
         </div>
