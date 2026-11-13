@@ -9,6 +9,8 @@ import { profile } from '../data/site.js'
 import SocialIcon from './SocialIcon.jsx'
 import '../styles/Hero.css'
 
+const resumeFileName = profile.resumePdf.slice(profile.resumePdf.lastIndexOf('/') + 1)
+
 function Hero() {
   const [photoAvailable, setPhotoAvailable] = useState(true)
   const [resumeAvailable, setResumeAvailable] = useState(false)
@@ -54,7 +56,7 @@ function Hero() {
             </a>
             <a
               className="button button-outline"
-              href={profile.resumeUrl}
+              href={profile.resumePdf}
               target="_blank"
               rel="noreferrer"
               aria-label="View resume PDF in a new tab"
@@ -65,7 +67,7 @@ function Hero() {
               <a
                 className="button button-quiet"
                 href={profile.resumePdf}
-                download="DEVA.pdf"
+                download
                 aria-label={`Download ${profile.name} resume PDF`}
               >
                 <Download size={16} aria-hidden="true" /> Download Resume
@@ -75,8 +77,8 @@ function Hero() {
                 className="button button-quiet resume-unavailable"
                 type="button"
                 disabled
-                aria-label="Download Resume unavailable; add DEVA.pdf to public/assets"
-                title="Add DEVA.pdf to public/assets to enable downloading."
+                aria-label={`Download Resume unavailable; add ${resumeFileName} to public/assets`}
+                title={`Add ${resumeFileName} to public/assets to enable downloading.`}
               >
                 <Download size={16} aria-hidden="true" /> Download Resume
               </button>

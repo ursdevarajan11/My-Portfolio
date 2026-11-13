@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ArrowUpRight } from 'lucide-react'
+import { ArrowUpRight, Server } from 'lucide-react'
 import { projects } from '../data/projects.js'
 import '../styles/Projects.css'
 import SocialIcon from './SocialIcon.jsx'
@@ -23,7 +23,13 @@ function ProjectLink({ href, icon: Icon, iconProps = {}, children, label }) {
   }
 
   return (
-    <a className="project-link" href={href} target="_blank" rel="noreferrer">
+    <a
+      className={`project-link${label === 'Live Demo' ? ' project-link-primary' : ''}`}
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={`${label} (opens in a new tab)`}
+    >
       <Icon size={15} {...iconProps} aria-hidden="true" />
       {children}
     </a>
@@ -42,7 +48,7 @@ function Projects() {
             <p className="eyebrow">04 — My Top Projects</p>
             <h2>Selected work, built with purpose.</h2>
             <p className="body-copy">
-              A selection of applications and ideas across commerce, AI, productivity, and security.
+              A selection of applications across e-commerce, healthcare, and productivity.
             </p>
           </div>
           <span className="project-count">0{projects.length} projects</span>
@@ -74,13 +80,18 @@ function Projects() {
                     href={project.github}
                     icon={SocialIcon}
                     iconProps={{ name: 'github' }}
-                    label="GitHub"
+                    label="GitHub Repository"
                   >
-                    GitHub
+                    GitHub Repository
                   </ProjectLink>
-                  <ProjectLink href={project.demo} icon={ArrowUpRight} label="Live demo">
+                  <ProjectLink href={project.demo} icon={ArrowUpRight} label="Live Demo">
                     Live Demo
                   </ProjectLink>
+                  {project.backend && (
+                    <ProjectLink href={project.backend} icon={Server} label="Backend API">
+                      Backend API
+                    </ProjectLink>
+                  )}
                 </div>
               </div>
               <span className="project-index" aria-hidden="true">0{index + 1}</span>

@@ -24,14 +24,13 @@ The production output is written to `dist/`. Netlify uses `npm run build` and
 ## Personal assets and links
 
 - Add the professional portrait at `public/images/profile.jpg`.
-- Add the resume PDF at `public/assets/DEVA.pdf`.
-- The provided resume PDF is served from `public/assets/DEVA.pdf`.
+- The resume PDF is served from `public/assets/Devaraja-Rajan-Resume.pdf`.
 - Update email, phone, and LinkedIn details in `src/data/site.js` when needed.
-- Add verified GitHub and demo URLs to each project in `src/data/projects.js`.
-- Confirm the Theft Alert System technology stack in `src/data/projects.js`.
+- Portfolio live and source links are managed in `src/data/site.js`.
+- Featured project links, descriptions, and technology stacks are managed in `src/data/projects.js`.
 
-The project-link controls remain disabled until a URL is supplied. The portrait
-and resume controls show helpful fallbacks when their files are missing.
+Project links open in a new tab. The portrait and resume controls show helpful
+fallbacks when their files are missing.
 
 ## Contact form
 

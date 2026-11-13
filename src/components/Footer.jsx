@@ -11,6 +11,14 @@ function Footer() {
           <a className="footer-brand" href="#home">{profile.brand}</a>
           <p>{profile.role}</p>
         </div>
+        <nav className="footer-portfolio-links" aria-label="Portfolio links">
+          <a href={profile.portfolioDemo} target="_blank" rel="noopener noreferrer">
+            Live Portfolio
+          </a>
+          <a href={profile.portfolioGithub} target="_blank" rel="noopener noreferrer">
+            Portfolio Source
+          </a>
+        </nav>
         <div className="footer-links">
           <a href={profile.github} target="_blank" rel="noreferrer" aria-label="GitHub profile">
             <SocialIcon name="github" />

@@ -20,6 +20,22 @@
   font-size: 11px;
 }
 
+.footer-portfolio-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+}
+
+.footer-portfolio-links a {
+  color: var(--muted);
+  font-size: 11px;
+  transition: color 160ms ease;
+}
+
+.footer-portfolio-links a:hover {
+  color: var(--cyan);
+}
+
 .footer-links {
   display: flex;
   gap: 9px;

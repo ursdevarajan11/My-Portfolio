@@ -28,13 +28,13 @@
 }
 
 html {
-  min-width: 320px;
+  min-width: 300px;
   scroll-behavior: smooth;
   scroll-padding-top: 88px;
 }
 
 body {
-  min-width: 320px;
+  min-width: 300px;
   margin: 0;
   background:
     radial-gradient(ellipse at 86% 4%, rgb(40 91 76 / 7%), transparent 29rem),

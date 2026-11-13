@@ -72,7 +72,7 @@
 }
 
 .project-description {
-  min-height: 42px;
+  min-height: 63px;
   margin: 9px 0 14px;
   color: var(--muted);
   font-size: 12px;
@@ -81,7 +81,7 @@
 
 .project-tags {
   display: flex;
-  min-height: 53px;
+  min-height: 61px;
   align-content: flex-start;
   flex-wrap: wrap;
   gap: 6px;
@@ -99,33 +99,58 @@
 .project-actions {
   display: flex;
   align-items: center;
-  gap: 17px;
-  margin-top: 15px;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
   padding-top: 14px;
   border-top: 1px solid rgb(222 221 211 / 88%);
 }
 
 .project-link {
   display: inline-flex;
+  min-height: 34px;
   align-items: center;
+  justify-content: center;
   gap: 7px;
-  padding: 0;
-  border: 0;
-  color: var(--cyan);
-  background: transparent;
+  padding: 0 10px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  color: var(--text);
+  background: rgb(255 255 255 / 82%);
   font-family: var(--body-font);
   font-size: 11px;
   font-weight: 600;
-  transition: color 160ms ease;
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease,
+    background 160ms ease,
+    box-shadow 160ms ease;
 }
 
 .project-link:hover {
-  color: var(--text);
+  transform: translateY(-1px);
+  border-color: rgb(40 91 76 / 55%);
+  color: var(--cyan);
+  box-shadow: 0 5px 14px rgb(32 43 37 / 8%);
+}
+
+.project-link-primary {
+  border-color: var(--cyan);
+  color: #ffffff;
+  background: var(--cyan);
+}
+
+.project-link-primary:hover {
+  border-color: #1d473b;
+  color: #ffffff;
+  background: #1d473b;
 }
 
 .project-link.is-unavailable {
   cursor: not-allowed;
   color: var(--subtle);
+  background: transparent;
 }
 
 .project-index {
@@ -173,6 +198,10 @@
   }
 
   .project-description {
+    min-height: unset;
+  }
+
+  .project-tags {
     min-height: unset;
   }
 }
