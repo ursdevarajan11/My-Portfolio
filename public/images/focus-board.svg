@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" fill="none">
+  <defs>
+    <linearGradient id="background" x1="62" y1="0" x2="698" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1A2340"/><stop offset="1" stop-color="#101A30"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="matrix(0 178 -286 0 390 213)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#35E0D0" stop-opacity=".14"/><stop offset="1" stop-color="#35E0D0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <path fill="url(#background)" d="M0 0h760v420H0z"/>
+  <path fill="url(#glow)" d="M0 0h760v420H0z"/>
+  <rect x="114" y="58" width="532" height="304" rx="14" fill="#0B1428" stroke="#263653"/>
+  <path fill="#14213B" d="M128 58h504a14 14 0 0 1 14 14v38H114V72a14 14 0 0 1 14-14Z"/>
+  <circle cx="137" cy="85" r="4" fill="#FF874A"/>
+  <circle cx="152" cy="85" r="4" fill="#35E0D0"/>
+  <path stroke="#60708B" stroke-linecap="round" stroke-width="5" d="M176 85h78"/>
+  <rect x="137" y="126" width="116" height="218" rx="7" fill="#121E35"/>
+  <path fill="#EDF3FF" d="M153 145h61v8h-61z"/>
+  <path fill="#35E0D0" fill-opacity=".15" d="M146 169h98v28h-98z"/>
+  <path stroke="#35E0D0" stroke-linecap="round" stroke-width="3" d="M158 183h48"/>
+  <path stroke="#62718B" stroke-linecap="round" stroke-width="3" d="M158 215h58m-58 24h48m-48 24h55"/>
+  <text x="275" y="151" fill="#EDF3FF" font-family="sans-serif" font-size="16" font-weight="600">Your focus board</text>
+  <path stroke="#62718B" stroke-linecap="round" stroke-width="3" d="M275 169h157"/>
+  <rect x="275" y="187" width="104" height="138" rx="6" fill="#14213B"/>
+  <rect x="391" y="187" width="104" height="138" rx="6" fill="#14213B"/>
+  <rect x="507" y="187" width="104" height="138" rx="6" fill="#14213B"/>
+  <path fill="#35E0D0" d="M286 201h50v5h-50z"/>
+  <path fill="#FF874A" d="M402 201h54v5h-54z"/>
+  <path fill="#9AA9C3" d="M518 201h49v5h-49z"/>
+  <rect x="285" y="218" width="84" height="42" rx="4" fill="#1D2B46"/>
+  <rect x="285" y="269" width="84" height="42" rx="4" fill="#1D2B46"/>
+  <rect x="401" y="218" width="84" height="42" rx="4" fill="#1D2B46"/>
+  <rect x="517" y="218" width="84" height="42" rx="4" fill="#1D2B46"/>
+  <path stroke="#EDF3FF" stroke-linecap="round" stroke-opacity=".8" stroke-width="3" d="M295 231h53m-53 8h39m-39 43h49m-49 8h35m-25-64h28m-25 43h37m-37 8h27m-25-59h35m-35 8h24"/>
+  <text x="32" y="38" fill="#9AA9C3" font-family="sans-serif" font-size="12" letter-spacing="3">PRODUCTIVITY / TASKS</text>
+  <text x="620" y="392" fill="#9AA9C3" font-family="sans-serif" font-size="11" letter-spacing="2">FOCUS BOARD</text>
+</svg>

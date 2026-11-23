@@ -1,5 +1,14 @@
 export const projects = [
   {
+    title: 'Focus Board',
+    category: 'Productivity',
+    image: '/images/focus-board.svg',
+    description: 'A responsive task-management dashboard with task tracking, search and filters, focus notes, and browser-based persistence.',
+    technologies: ['React', 'Vite', 'JavaScript', 'CSS', 'Lucide React'],
+    github: 'https://github.com/ursdevarajan11/FocusBoard.git',
+    demo: 'https://my-focus-board.netlify.app',
+  },
+  {
     title: 'Perfume Shop Website',
     category: 'E-commerce',
     image: '/images/perfume-shop.svg',
